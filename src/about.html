@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="about.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocSpace</title>
+</head>
+
+<body class="font-sans">
+
+  <div class="flex h-screen bg-gray-100">
+    <aside id="sidebar"
+      class="w-64 bg-gray-800 shadow-lg fixed inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition duration-300 ease-in-out z-50">
+      <div class="p-4 text-xl font-semibold text-gray-200">
+        DocSpace
+      </div>
+      <nav class="mt-4">
+        <a href="../index.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Home</a>
+        <a href="documentation.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Documentation</a>
+        <a href="articles.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Articles</a>
+        <a href="about.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">About</a>
+        <a href="contact.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Contact</a>
+      </nav>
+      <button id="menu-button" class="menu-button md:hidden absolute top-4 right-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </aside>
+
+    <div class="flex-1 flex flex-col md:pl-64">
+      <header class="bg-gray-800 shadow-lg p-4">
+        <button id="menu-button" class="md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+        </button>
+        <h1 class="text-xl font-semibold text-gray-200">Home</h1>
+      </header>
+      <main class="p-4 bg-gray-900 flex-1 overflow-y-auto text-gray-300">
+        <section>
+         <div class="p-4 max-w-4xl mx-auto text-center bg-gray-700 rounded-lg shadow-md">
+        <h1 class="text-2xl font-bold text-gray-300">About Us - DocSpace</h1>
+        <br>
+        <p class="text-gray-300">O DocSpace nasceu da necessidade de organizar o vasto e fragmentado conhecimento sobre
+          o universo em
+          um ambiente digital estruturado, acessível e intelectualmente rigoroso. Em um cenário onde informações sobre o
+          espaço circulam de forma superficial, sensacionalista ou imprecisa, nossa proposta é diferente: oferecer
+          conteúdo fundamentado, contextualizado e tecnicamente responsável.</p>
+
+        <br>
+
+        <p class="text-gray-300">Somos uma plataforma dedicada à documentação e análise de temas relacionados à
+          astronomia, astrofísica,
+          exploração espacial, cosmologia, engenharia aeroespacial e avanços tecnológicos vinculados ao estudo do
+          cosmos. Nosso foco não está apenas em apresentar fatos, mas em explicar processos, conceitos e implicações
+          científicas com profundidade adequada e linguagem clara.</p>
+
+        <br>
+
+        <p class="text-gray-300">O universo não é simples. Ele envolve escalas de tempo quase inconcebíveis, distâncias
+          absurdas e fenômenos físicos que desafiam a intuição humana. Por isso, estruturamos nossos conteúdos de forma
+          progressiva, conectando fundamentos teóricos a aplicações práticas e descobertas recentes. Cada publicação é
+          construída com base em fontes confiáveis, dados verificáveis e interpretação técnica consistente.</p>
+
+        <br>
+
+        <p class="text-gray-300">No DocSpace, acreditamos que a divulgação científica deve respeitar a inteligência do
+          leitor. Não reduzimos a complexidade a slogans vazios, mas também não transformamos ciência em algo
+          inacessível. Nosso compromisso é equilibrar precisão e clareza, permitindo que estudantes, pesquisadores
+          iniciantes, entusiastas e leitores curiosos aprofundem seu entendimento sem ruído ou exagero.</p>
+
+        <br>
+
+        <p class="text-gray-300">Além de informar, buscamos estimular pensamento crítico. O espaço não é apenas um
+          espetáculo visual; é um campo de investigação contínua que redefine nossa compreensão sobre matéria, energia,
+          tempo e origem. Ao documentar missões espaciais, analisar teorias cosmológicas ou explicar estruturas
+          galácticas, nosso objetivo é fornecer contexto, método e raciocínio, não apenas curiosidades isoladas.</p>
+
+        <br>
+
+        <p class="text-gray-300">O conhecimento sobre o universo está em constante evolução. Novas observações, novos
+          instrumentos e novas teorias surgem a cada ano. O DocSpace acompanha esse movimento com atualização contínua,
+          revisão de conteúdos e expansão temática, mantendo a integridade científica como prioridade.</p>
+
+        <br>
+
+        <p class="text-gray-300">DocSpace é mais do que um site sobre o espaço. É um ambiente digital de estudo,
+          documentação e exploração racional do cosmos.</p>
+
+      </div>
+        </section>
+
+        
+
+        <div class="overlay bg-black bg-opacity-50 fixed inset-0 hidden" id="overlay">
+          <div class="modal bg-gray-800 rounded-lg shadow-lg p-6 w-11/12 md:w-1/2 lg:w-1/3 mx-auto mt-20">
+            <h2 class="text-2xl font-bold mb-4" id="modal-title">Título do Planeta</h2>
+            <p class="mb-4 max-w-800 h-100 overflow-y-auto" id="modal-description">Descrição do planeta...</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+              id="close-modal">Fechar</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="about.js"></script>
+</body>
+
+</html>

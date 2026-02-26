@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="contact.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocSpace</title>
+</head>
+
+<body class="font-sans">
+
+  <div class="flex h-screen bg-gray-100">
+    <aside id="sidebar"
+      class="w-64 bg-gray-800 shadow-lg fixed inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition duration-300 ease-in-out z-50">
+      <div class="p-4 text-xl font-semibold text-gray-200">
+        DocSpace
+      </div>
+      <nav class="mt-4">
+        <a href="../index.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Home</a>
+        <a href="documentation.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Documentation</a>
+        <a href="articles.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Articles</a>
+        <a href="about.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">About</a>
+        <a href="contact.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Contact</a>
+      </nav>
+      <button id="menu-button" class="menu-button md:hidden absolute top-4 right-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </aside>
+
+    <div class="flex-1 flex flex-col md:pl-64">
+      <header class="bg-gray-800 shadow-lg p-4">
+        <button id="menu-button" class="md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+        </button>
+        <h1 class="text-xl font-semibold text-gray-200">Home</h1>
+      </header>
+      <main class="p-4 bg-gray-900 flex-1 overflow-y-auto text-gray-300">
+         <section class="container mx-auto p-4">
+      <div class="perfil p-4 bg-black text-white rounded-lg shadow-md max-w-2xl mx-auto mt-8">
+        <h1 class="text-xl font-bold text-center">Instagram</h1>
+        <div class="flex flex-col items-center mt-4 space-y-4">
+          <img class="rounded-[50%]" src="images/yuki_gabriel.sec.jpg" alt="">
+          <h2 class="text-xl font-semibold">yuki_gabriel.sec</h2>
+          <h2>Yuki Gabriel</h2>
+        </div>
+        <div class="flex flex-row items-center justify-center mt-4 space-x-4">
+          <p class="text-center">0 posts</p>
+          <p class="text-center">44 seguidores</p>
+          <p class="text-center">461 seguindo</p>
+        </div>
+        <div class="text-center">
+          <h2 class="text-xl font-bold text-center mt-4">ℑ 𝔅𝔢𝔩𝔬𝔫𝔤 𝔱𝔬 𝔍𝔢𝔰𝔲𝔰</h2>
+          <h2 class="text-center italic">"If you 𝕯𝖔𝖓'𝖙 𝖑𝖔𝖛𝖊 𝖒𝖊, I 𝕯𝖔𝖓'𝖙 𝖑𝖔𝖛𝖊 𝖞𝖔𝖚, it's simple..."
+          </h2>
+          <br>
+          <a href="https://www.instagram.com/yuki_gabriel.sec/" target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Ver Perfil no
+            Instagram</a>
+        </div>
+      </div>
+
+      <br>
+
+      <div class="perfil p-4 bg-black text-white rounded-lg shadow-md max-w-2xl mx-auto mt-8">
+        <h1 class="text-xl font-bold text-center">Instagram</h1>
+        <div class="flex flex-col items-center mt-4 space-y-4">
+          <img class="rounded-[50%]" src="images/rafelsl.jpg" alt="">
+          <h2 class="text-xl font-semibold">rafelsl</h2>
+          <h2>Rafaelll</h2>
+        </div>
+        <div class="flex flex-row items-center justify-center mt-4 space-x-4">
+          <p class="text-center">0 posts</p>
+          <p class="text-center">10 seguidores</p>
+          <p class="text-center">26 seguindo</p>
+        </div>
+        <div class="text-center">
+          
+          <h2 class="text-center font-bold italic m-4">"Amarás o teu próximo como a ti mesmo" Mateus 22:39."
+          </h2>
+          <br>
+          <a href="https://www.instagram.com/rafelsl/" target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4">Ver Perfil no
+            Instagram</a>
+        </div>
+      </div>
+      <br>
+
+    </section>
+        
+
+        <div class="overlay bg-black bg-opacity-50 fixed inset-0 hidden" id="overlay">
+          <div class="modal bg-gray-800 rounded-lg shadow-lg p-6 w-11/12 md:w-1/2 lg:w-1/3 mx-auto mt-20">
+            <h2 class="text-2xl font-bold mb-4" id="modal-title">Título do Planeta</h2>
+            <p class="mb-4 max-w-800 h-100 overflow-y-auto" id="modal-description">Descrição do planeta...</p>
+            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+              id="close-modal">Fechar</button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+
+</html>
