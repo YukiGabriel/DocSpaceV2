@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="documentation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocSpace</title>
+</head>
+
+<body class="font-sans">
+
+   <div class="flex h-screen bg-gray-100">
+    <aside id="sidebar"
+      class="w-64 bg-gray-800 shadow-lg fixed inset-y-0 left-0 transform -translate-x-full md:translate-x-0 transition duration-300 ease-in-out">
+      <div class="p-4 text-xl font-semibold text-gray-200">
+        DocSpace
+      </div>
+      <nav class="mt-4">
+        <a href="../index.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Home</a>
+        <a href="documentation.html" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Documentation</a>
+        <a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Articles</a>
+        <a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">About</a>
+        <a href="#" class="block py-2 px-4 text-gray-300 hover:bg-gray-200">Contact</a>
+      </nav>
+      <button id="menu-button" class="menu-button md:hidden absolute top-4 right-4">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </aside>
+
+    
+    <div class="flex-1 flex flex-col md:pl-64">
+      <header class="bg-gray-800 shadow-lg p-4">
+        <button id="menu-button" class="md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+        </button>
+        <h1 class="text-xl font-semibold text-gray-200">Home</h1>
+      </header>
+      <main class="p-4 bg-gray-900 flex-1 overflow-y-auto text-gray-300">
+        
+        <section>
+          <div
+            class="planet-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 p-4">
+            <h2 class="text-xl font-bold col-span-full">Planetas do Sistema Solar</h2>
+
+            <button id="card"
+              class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+              <img src="images/Mercurio.png" alt="Mercúrio" class="aspect-square object-cover">
+            </button>
+
+            <button id="card"
+              class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+              <img src="images/Venus.png" alt="Vênus" class="aspect-square object-cover">
+            </button>
+
+            <button id="card"
+              class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+              <img src="images/Terra.png" alt="Terra" class="aspect-square object-cover">
+            </button>
+
+            <button id="card"
+              class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+              <img src="images/Marte.png" alt="Marte" class="aspect-square object-cover">
+            </button>
+
+            <button id="card"
+              class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+              <img src="images/Jupiter.png" alt="Jupiter" class="aspect-square object-cover">
+            </button>
+
+            <button id="card"
+              class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+              <img src="images/Saturno.png" alt="Saturno" class="aspect-square object-cover">
+            </button>
+
+            <button id="card"
+              class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+              <img src="images/Urano.png" alt="Urano" class="aspect-square object-cover">
+            </button>
+
+            <button id="card"
+              class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+              <img src="images/Netuno.png" alt="Netuno" class="aspect-square object-cover">
+            </button>
+          </div>
+        </section>
+
+        <section>
+         <div class="moon-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 4">
+        <h2 class="text-xl font-bold col-span-full text-center">Luas</h2>
+
+        <button id="cardLua"
+          class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+          <img src="images/Lua.png" alt="Lua" class="aspect-square object-cover">
+        </button>
+
+        <button id="cardLua"
+          class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+          <img src="images/Europa-lua.png" alt="Europa" class="aspect-square object-cover">
+        </button>
+
+        <button id="cardLua"
+          class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+          <img src="images/Io.png" alt="Io" class="aspect-square object-cover">
+        </button>
+        <button id="cardLua"
+          class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+          <img src="images/Tita.png" alt="Tita" class="aspect-square object-cover">
+        </button>
+        <button id="cardLua"
+          class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+          <img src="images/Ganimedes.png" alt="Ganimedes" class="aspect-square object-cover">
+        </button>
+        <button id="cardLua"
+          class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+          <img src="images/Calisto.png" alt="Calisto" class="aspect-square object-cover">
+        </button>
+        <button id="cardLua"
+          class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+          <img src="images/Encelado.png" alt="Encélado" class="aspect-square object-cover">
+        </button>
+        <button id="cardLua"
+          class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+          <img src="images/Tritao.png" alt="Tritão" class="aspect-square object-cover">
+        </button>
+
+
+      </div>
+        </section>
+
+        <section>
+      <!--H2 ESTRELAS-->
+      <div class="p-4 max-w-800 mx-auto text-center bg-gray-700 rounded-lg shadow-md mt-8 mb-8 ">
+        <h2 class="text-xl font-bold">Noções básicas de estrelas</h2>
+
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/sun-h1180-jpg.png" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+        </div>
+
+        <p>Os astrônomos estimam que o universo possa conter até um septilhão de estrelas – isso mesmo, um número 1
+          seguido de 24 zeros. Só a nossa Via Láctea contém mais de 100 bilhões, incluindo a estrela mais estudada, o
+          Sol.
+
+          As estrelas são gigantescas bolas de gás quente – principalmente hidrogênio, com um pouco de hélio e pequenas
+          quantidades de outros elementos. Cada estrela tem seu próprio ciclo de vida, que varia de alguns milhões a
+          trilhões de anos, e suas propriedades mudam à medida que envelhece.
+        </p>
+        <br>
+        <h2 class="text-xl font-bold">Aniversário</h2>
+        <p>As estrelas se formam em grandes nuvens de gás e poeira chamadas nuvens moleculares. Essas nuvens têm massas
+          que variam de 1.000 a 10 milhões de vezes a do Sol e podem se estender por centenas de anos-luz. O frio nessas
+          nuvens faz com que o gás se aglomere, criando bolsões de alta densidade. Alguns desses aglomerados podem
+          colidir uns com os outros ou acumular mais matéria, fortalecendo sua força gravitacional à medida que sua
+          massa aumenta. Eventualmente, a gravidade faz com que alguns desses aglomerados colapsem. Quando isso
+          acontece, o atrito faz com que o material aqueça, o que eventualmente leva ao desenvolvimento de uma
+          protoestrela – uma estrela em formação. Aglomerados de estrelas que se formaram recentemente a partir de
+          nuvens moleculares são frequentemente chamados de aglomerados estelares, e nuvens moleculares repletas de
+          aglomerados estelares são chamadas de berçários estelares.
+        </p>
+
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/Carina_Nebula-1.jpeg" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+          <p class="text-gray-400">A borda de um berçário estelar próximo, chamado NGC 3324, localizado no canto
+            noroeste da Nebulosa de Carina, forma as "montanhas" e os "vales" que se estendem por esta imagem capturada
+            pelo Telescópio Espacial James Webb.</p>
+        </div>
+        <br>
+        <h2 class="text-xl font-bold">Vida</h2>
+        <p>Inicialmente, a maior parte da energia da protoestrela provém do calor liberado pelo seu colapso inicial.
+          Após milhões de anos, imensas pressões e temperaturas no núcleo da estrela comprimem os núcleos dos átomos de
+          hidrogênio, formando hélio, um processo chamado fusão nuclear. A fusão nuclear libera energia, que aquece a
+          estrela e impede que ela colapse ainda mais sob a ação da gravidade.</p>
+
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/Sun_Emits_Flare.jpeg" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+          <p class="text-gray-400">O nosso Sol, uma estrela da sequência principal, emite fortes flashes de erupção
+            solar nesta imagem capturada pelo Observatório de Dinâmica Solar da NASA.
+          </p>
+        </div>
+        <br>
+        <p>Os astrônomos chamam de estrelas da sequência principal as estrelas que estão passando por fusão nuclear
+          estável de hidrogênio em hélio. Esta é a fase mais longa da vida de uma estrela. A luminosidade, o tamanho e a
+          temperatura da estrela mudam lentamente ao longo de milhões ou bilhões de anos durante essa fase. Nosso Sol
+          está aproximadamente na metade de sua fase de sequência principal.</p>
+        <br>
+        <p>O gás de uma estrela fornece seu combustível, e sua massa determina a rapidez com que ela consome esse
+          suprimento. Estrelas de menor massa queimam por mais tempo, com menos brilho e a temperaturas mais baixas do
+          que estrelas muito massivas. Estrelas mais massivas precisam queimar combustível a uma taxa mais alta para
+          gerar a energia que as impede de colapsar sob seu próprio peso. Algumas estrelas de baixa massa brilharão por
+          trilhões de anos — mais tempo do que o universo existe atualmente — enquanto algumas estrelas massivas viverão
+          apenas alguns milhões de anos.</p>
+        <br>
+        <h2 class="text-xl font-bold">Morte</h2>
+        <p>No início do fim da vida de uma estrela, seu núcleo fica sem hidrogênio para converter em hélio. A energia
+          produzida pela fusão cria pressão dentro da estrela, equilibrando a tendência da gravidade de atrair a
+          matéria, fazendo com que o núcleo comece a colapsar. Mas a compressão do núcleo também aumenta sua temperatura
+          e pressão, fazendo com que a estrela se expanda lentamente. No entanto, os detalhes dos estágios finais da
+          morte da estrela dependem fortemente de sua massa.
+        </p>
+        <br>
+        <p>A atmosfera de uma estrela de baixa massa continuará se expandindo até que ela se torne uma estrela
+          subgigante ou gigante, enquanto a fusão converte hélio em carbono em seu núcleo. (Este será o destino do nosso
+          Sol, daqui a alguns bilhões de anos.) Algumas gigantes se tornam instáveis ​​e pulsam, inflando-se
+          periodicamente e ejetando parte de suas atmosferas. Eventualmente, todas as camadas externas da estrela se
+          desprendem, criando uma nuvem em expansão de poeira e gás chamada nebulosa planetária.</p>
+
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/The_Helix_Nebula-1.jpeg" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+          <p class="text-gray-400">A Nebulosa da Helix, mostrada nesta imagem, está localizada a 650 anos-luz de
+            distância, na constelação de Aquário. Também conhecida como NGC 7293, é um exemplo típico de nebulosa
+            planetária.
+          </p>
+        </div>
+        <br>
+        <p>Tudo o que restou da estrela foi seu núcleo, agora chamado de anã branca, um resíduo estelar
+          aproximadamente do tamanho da Terra que esfria gradualmente ao longo de bilhões de anos.</p>
+        <br>
+        <p>A high-mass star goes further. Fusion converts carbon into heavier elements like oxygen, neon, and magnesium,
+          which will become future fuel for the core. For the largest stars, this chain continues until silicon fuses
+          into iron. These processes produce energy that keeps the core from collapsing, but each new fuel buys it less
+          and less time. The whole process takes just a few million years. By the time silicon fuses into iron, the star
+          runs out of fuel in a matter of days. The next step would be fusing iron into some heavier element but doing
+          so requires energy instead of releasing it.</p>
+
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/Tycho-1.jpeg" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+          <p class="text-gray-400">O remanescente de uma supernova observada em 1572, notavelmente estudada pelo
+            astrônomo dinamarquês Tycho Brahe, encontra-se a cerca de 13.000 anos-luz de distância, na constelação de
+            Cassiopeia. Nesta imagem composta, dados do Observatório de Raios X Chandra da NASA foram combinados com uma
+            imagem óptica de estrelas na mesma região.
+          </p>
+        </div>
+        <br>
+        <p>The star’s iron core collapses until forces between the nuclei push the brakes, then it rebounds. This change
+          creates a shock wave that travels outward through the star. The result is a huge explosion called a supernova.
+          The core survives as an incredibly dense remnant, either a neutron star or a black hole.</p>
+        <br>
+        <p>Material cast into the cosmos by supernovae and other stellar events will enrich future molecular clouds and
+          become incorporated into the next generation of stars.</p>
+          <br>
+          <br>
+
+        <div class="star-grid grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 gap-4 4">
+          <h2 class="text-xl font-bold col-span-full text-center">Estrelas</h2>
+          <button id="cardEstrela"
+            class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+            <img src="images/Sol.png" alt="Sol" class="aspect-square object-cover">
+          </button>
+          <button id="cardEstrela"
+            class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+            <img src="images/Sirius.png" alt="Sirius" class="aspect-square object-cover">
+          </button>
+          <!--A PARTIR DAQUI SEM IMG E ALT-->
+          <button id="cardEstrela"
+            class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+            <img src="images/betelgeuse.png" alt="betelgeuse" class="aspect-square object-cover">
+          </button>
+          <button id="cardEstrela"
+            class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+            <img src="images/rigel.png" alt="Rigel" class="aspect-square object-cover">
+          </button>
+          <button id="cardEstrela"
+            class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+            <img src="images/vega.png" alt="Vega" class="aspect-square object-cover">
+          </button>
+          <button id="cardEstrela"
+            class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+            <img src="images/proximacentauri.png" alt="Proxima Centauri" class="aspect-square object-cover">
+          </button>
+          <button id="cardEstrela"
+            class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+            <img src="images/antares.png" alt="Antares" class="aspect-square object-cover">
+          </button>
+          <button id="cardEstrela"
+            class="card bg-gray-700 rounded-lg shadow-md p-4 hover:bg-gray-600 transition duration-300">
+            <img src="images/polaris.png" alt="Polaris" class="aspect-square object-cover">
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="p-4 max-w-800 mx-auto text-center bg-gray-700 rounded-lg shadow-md mt-8 mb-8 ">
+        <h2 class="text-xl font-bold col-span-full">Noções básicas sobre buracos negros</h2>
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/sub-warped-gaia-000000-14x5-1.png" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+        </div>
+
+        <h2 class="text-white font-bold">Noções básicas sobre buracos negros</h2>
+        <p>Buracos negros estão entre os objetos cósmicos mais misteriosos, muito estudados, mas ainda não totalmente
+          compreendidos. Esses objetos não são realmente buracos. São enormes concentrações de matéria compactadas em
+          espaços minúsculos. Um buraco negro é tão denso que a gravidade logo abaixo de sua superfície, o horizonte de
+          eventos, é tão forte que nada — nem mesmo a luz — consegue escapar. O horizonte de eventos não é uma
+          superfície como a da Terra ou mesmo a do Sol. É uma fronteira que contém toda a matéria que compõe o buraco
+          negro.
+
+          Há muito que ainda não sabemos sobre buracos negros, como a aparência da matéria dentro de seus horizontes de
+          eventos. No entanto, os cientistas já sabem muito sobre eles.
+        </p>
+
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/webb-STScI-01JKREFYNJE7MT5SG2H0FBYG75-2K.png" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+          <p class="text-gray-400">Esta ilustração artística retrata o buraco negro supermassivo no centro da galáxia
+            Via Láctea, conhecido
+            como Sagitário A* (A-estrela). Ele é cercado por um disco de acreção giratório de gás quente. A gravidade do
+            buraco negro curva a luz do lado oposto do disco, fazendo com que ela pareça se curvar acima e abaixo do
+            buraco negro. Vários pontos quentes eruptivos que se assemelham a erupções solares, mas em uma escala
+            energética maior, são vistos no disco. O Telescópio Espacial James Webb da NASA detectou tanto erupções
+            brilhantes quanto oscilações mais fracas vindas de Sagitário A*. As oscilações são tão rápidas que devem se
+            originar muito perto do buraco negro.
+            Ilustração: NASA, ESA, CSA, Ralf Crawford (STScI)</p>
+        </div>
+
+        <h2 class="text-white font-bold">Encontrando buracos negros</h2>
+        <h3>Os buracos negros não emitem nem refletem luz, o que os torna praticamente invisíveis aos telescópios. Os
+          cientistas os detectam e estudam principalmente com base em como eles afetam o ambiente ao seu redor:</h3>
+        <br>
+        <p>&starf;Os buracos negros podem ser rodeados por anéis de gás e poeira, chamados discos de acreção, que emitem
+          luz em vários comprimentos de onda, incluindo raios X.</p>
+        <br>
+        <p>&starf;A intensa gravidade de um buraco negro supermassivo pode fazer com que as estrelas orbitem ao seu
+          redor
+          de uma maneira específica. Astrônomos rastrearam as órbitas de várias estrelas próximas ao centro da Via
+          Láctea para comprovar que ela abriga um buraco negro supermassivo, uma descoberta que rendeu o Prêmio Nobel de
+          2020.</p>
+        <br>
+        <p>&starf;;Quando objetos muito massivos aceleram pelo espaço, eles criam ondulações no tecido do espaço-tempo
+          chamadas ondas gravitacionais. Os cientistas conseguem detectar algumas dessas ondas pelo efeito que elas
+          causam nos detectores.</p>
+        <br>
+        <p>&starf;Objetos massivos como buracos negros podem curvar e distorcer a luz proveniente de objetos mais
+          distantes. Esse efeito, chamado lente gravitacional, pode ser usado para encontrar buracos negros isolados
+          que, de outra forma, seriam invisíveis.</p>
+        <br>
+
+        <h2 class="text-white font-bold">Buracos negros não são...</h2>
+        <p>&starf;Buracos de minhoca. Eles não fornecem atalhos entre diferentes pontos no espaço, nem portais para
+          outras dimensões ou universos.</p>
+        <br>
+        <p>&starf; Aspiradores cósmicos. Buracos negros não sugam matéria. De uma distância suficiente, seus efeitos
+          gravitacionais são iguais aos de outros objetos de mesma massa.</p>
+
+        <div class="w-full flex justify-center">
+          <div class="relative w-full max-w-3xl aspect-video">
+            <iframe class="absolute inset-0 w-full h-full rounded-xl shadow-lg"
+              src="https://www.youtube.com/embed/nJ4d4QEDOYM?si=uNOuVdgKIIY4zRcS" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+          </div>
+
+        </div>
+        <p>Buracos negros: o que são realmente? Descubra isso e muito mais com "Astro-Investigates", a série de vídeos
+          que explora e explica grandes temas da astrofísica com a ajuda de cientistas da NASA.</p>
+
+      </div>
+    </section>
+    <section>
+      <div class="p-4 max-w-800 mx-auto text-center bg-gray-700 rounded-lg shadow-md mt-8 mb-8 ">
+        <h2 class="text-white font-bold">Noções básicas sobre galáxias</h2>
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/spiral-galaxy-jpg.png" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+        </div>
+
+        <p>As galáxias são compostas por estrelas, planetas e vastas nuvens de gás e poeira, todas unidas pela
+          gravidade. As maiores contêm trilhões de estrelas e podem ter mais de um milhão de anos-luz de diâmetro. As
+          menores podem conter alguns milhares de estrelas e ter apenas algumas centenas de anos-luz de diâmetro. A
+          maioria das grandes galáxias possui buracos negros supermassivos em seus centros, alguns com bilhões de vezes
+          a massa do Sol.
+
+          As galáxias apresentam uma variedade de formas, principalmente espirais e elípticas, bem como aquelas com
+          aparências menos ordenadas, geralmente chamadas de irregulares.
+
+          A maioria das galáxias tem entre 10 bilhões e 13,6 bilhões de anos. Algumas são quase tão antigas quanto o
+          próprio universo, que se formou há cerca de 13,8 bilhões de anos. Os astrônomos acreditam que a galáxia mais
+          jovem conhecida se formou há aproximadamente 500 milhões de anos.
+
+          As galáxias podem se organizar em grupos de cerca de 100 ou menos membros, unidos pela gravidade mútua.
+          Estruturas maiores, chamadas aglomerados, podem conter milhares de galáxias. Grupos e aglomerados podem se
+          organizar em superaglomerados, que não são gravitacionalmente ligados. Superaglomerados, vazios, "paredes" de
+          galáxias e outras estruturas em grande escala compõem a teia cósmica da matéria no universo.</p>
+        <br>
+        <h2 class="text-white font-bold">Nossa Via Láctea</h2>
+        <p>Nossa galáxia, onde vivemos, chama-se Via Láctea. É uma galáxia espiral com um disco de estrelas que se
+          estende por mais de 100.000 anos-luz. A Terra está localizada em um dos braços espirais da galáxia,
+          aproximadamente a meio caminho do centro. Nosso sistema solar leva cerca de 240 milhões de anos para orbitar a
+          Via Láctea uma única vez.</p>
+        <br>
+        <div class="banner relative overflow-hidden rounded-lg m-4 shadow-lg ">
+          <img id="banner-image" src="images/Milky_Way_illustration-1.jpeg" alt="Banner Image"
+            class="w-full h-150 object-cover transition-opacity duration-1000">
+          <p class="text-gray-400">Esta ilustração mostra a Via Láctea, nossa galáxia natal.</p>
+        </div>
+        <br>
+        <p>Da nossa perspectiva na Terra, a Via Láctea parece uma faixa tênue e leitosa de luz arqueando-se por todo o
+          céu, que é como ela recebeu seu nome. Essa característica marca o disco central da nossa galáxia, visto de
+          perfil.
+
+          A Via Láctea está em uma vizinhança com mais de 50 outras galáxias chamada Grupo Local. Seus membros variam em
+          tamanho desde galáxias anãs (galáxias menores com até alguns bilhões de estrelas) até Andrômeda, nossa vizinha
+          galáctica grande mais próxima.
+
+          O Grupo Local fica logo além da borda do aglomerado de Virgem e faz parte do superaglomerado de Laniakea.</p>
+
+      </div>
+    </section>
+
+
+
+        <div class="overlay bg-black bg-opacity-50 fixed inset-0 hidden" id="overlay">
+            <div class="modal bg-gray-800 rounded-lg shadow-lg p-6 w-11/12 md:w-1/2 lg:w-1/3 mx-auto mt-20">
+                <h2 class="text-2xl font-bold mb-4" id="modal-title">Título do Planeta</h2>
+                <p class="mb-4 max-w-800 h-100 overflow-y-auto" id="modal-description">Descrição do planeta...</p>
+                <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+                    id="close-modal">Fechar</button>
+            </div>
+        </div>
+        </main>
+    </div>
+    </div>
+
+    <script src="documentation.js"></script>
+</body>
+
+</html>
